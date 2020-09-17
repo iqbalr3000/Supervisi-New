@@ -62,7 +62,7 @@
                             <th>Supervisor</th>
                             <th>Status</th>
                             <th>Waktu Upload</th>
-                            <th width="300px">Action</th>
+                            <th width="360px">Action</th>
                         </tr>
  
                         <?php 
@@ -81,6 +81,7 @@
                             <td><?php echo $data['status']; ?></td>
                             <td><?php echo $data['waktu_upload']; ?></td>
                             <td>
+                                <a class="btn btn-success" href="../../assets/hasil_upload/<?php echo $data['nama_file']; ?>">Lihat</a>
                                 <a href="download.php?id=<?php echo $data['id']; ?>" class="btn btn-success">Download</a>
                                 <a href="aprove.php?id=<?php echo $data['id']; ?>" class="btn btn-primary">Aprove</a>
                                 <a href="revise.php?id=<?php echo $data['id']; ?>" class="btn btn-secondary">Revise</a>
